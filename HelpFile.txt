@@ -1,0 +1,46 @@
+                                                                      ["AngularLibProj" Documentation/ Flow Structure] 
+
+###Version 1.0
+
+1.DashBoard 
+It includes all other components, basiccaly it's the homepage.
+
+2.Header
+It is on the top of Dashboard/Home Page, which includes Book Logo in left most corner followed by Tagline in it's right-side.
+
+3.Footer
+It will be at the bottom of Dashboard/Home Page, which just contains the tagline, followed by contact information like mail id or so..
+
+4.Sign-up
+It is for users who are doing registration for first time.
+
+5.Sign-in
+It is for users who just need to authenticate and login with password.
+
+6.Sign-out 
+It will just logs out the user.
+
+7.My Account
+It is a user Dashboard, which will contain information like, No. of book's issued, Book ID, SN, Name, autor name.
+
+8.Admin Account
+It is a Admin Dashboard, where he/she can see which book is allocated to whom, along with that, he will have notification's that someone has returned book so that he/she can go and check manually in the book stock.
+
+9.Inventroy 
+It will simple show all the books available, along with book image, book name and author name, if any book has already been issued by someone, it will not be listed here.
+
+10.Issue Book
+When someone clicks issue book from Home page, he will be directed to another page containing scanner, he can click scaner and scan book through bar code, this information will be updated in DB, and it will be updated in user profile as well( My Account section), and Inventrory list will also be updated.
+
+11.Return Book
+User can simply click on return book and do confirm, at that time, one simple notification will be sent to Admin, that book is returned and his account will be updated with 0 book's allocated and Inventory will be updated as well.
+
+12.Scanner
+It will appear as a child of Book Issue, (Only retriction to put is it can only scan book's available in book shelf, no outside book)
+
+
+->Any Updation After this structure implementation
+###Version 1.1
+
+
+  
