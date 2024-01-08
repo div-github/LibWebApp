@@ -2,8 +2,8 @@ import { Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderWithLogoComponent } from './header-with-logo/header-with-logo.component';
 import { FooterWithCopywriteAndContactComponent } from './footer-with-copywrite-and-contact/footer-with-copywrite-and-contact.component';
-import { SignInLoggingInComponent } from './sign-in-logging-in/sign-in-logging-in.component';
-import { SignUpRegistrationComponent } from './sign-up-registration/sign-up-registration.component';
+import { SigninComponent } from './sign-in-logging-in/sign-in-logging-in.component';
+import { SignupComponent } from './signup/signup.component';
 import { SignOutComponent } from './sign-out/sign-out.component';
 import { AdminAccountComponent } from './admin-account/admin-account.component';
 import { UserAccountComponent } from './user-account/user-account.component';
@@ -28,8 +28,8 @@ export const routes: Routes = [
           { path: 'useraccount', component: UserAccountComponent },
         ],
       },
-      { path: 'signin', component: SignInLoggingInComponent },
-      { path: 'signup', component: SignUpRegistrationComponent },
+      { path: 'signin', component: SigninComponent },
+      { path: 'signup', component: SignupComponent },
     ],
   },
 ];
