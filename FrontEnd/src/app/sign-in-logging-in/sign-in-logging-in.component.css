@@ -20,6 +20,12 @@ body {
     color: #8b4513; /* Brown text color */
     margin-bottom: 20px;
   }
+
+  .book-icon2 {
+    width: 1.5em; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add some space between the heading and the icon */
+  }
   
   form {
     margin-top: 10px;
