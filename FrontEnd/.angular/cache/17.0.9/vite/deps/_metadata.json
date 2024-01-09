@@ -1,56 +1,41 @@
 {
-  "hash": "060bdd76",
-  "browserHash": "256d0554",
+  "hash": "bba11d2f",
+  "browserHash": "afe46008",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "8e210c5f",
+      "fileHash": "f84a10a8",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "bbb7c087",
+      "fileHash": "3ad90159",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "f7313677",
+      "fileHash": "3e374097",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "5dbb0cd9",
-      "needsInterop": false
-    },
-    "@fortawesome/angular-fontawesome": {
-      "src": "../../../../../node_modules/@fortawesome/angular-fontawesome/fesm2022/angular-fontawesome.mjs",
-      "file": "@fortawesome_angular-fontawesome.js",
-      "fileHash": "2c9be2e2",
-      "needsInterop": false
-    },
-    "@fortawesome/free-solid-svg-icons": {
-      "src": "../../../../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
-      "file": "@fortawesome_free-solid-svg-icons.js",
-      "fileHash": "9934a469",
+      "fileHash": "51a26fba",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-EKRDPX2C": {
-      "file": "chunk-EKRDPX2C.js"
+    "chunk-BZB5NCBM": {
+      "file": "chunk-BZB5NCBM.js"
     },
-    "chunk-E2DWKXNZ": {
-      "file": "chunk-E2DWKXNZ.js"
+    "chunk-XYNEQS2Y": {
+      "file": "chunk-XYNEQS2Y.js"
     },
-    "chunk-AN6NUCZJ": {
-      "file": "chunk-AN6NUCZJ.js"
-    },
-    "chunk-HSNDBVJ3": {
-      "file": "chunk-HSNDBVJ3.js"
+    "chunk-I3SMJ4Z2": {
+      "file": "chunk-I3SMJ4Z2.js"
     }
   }
 }
