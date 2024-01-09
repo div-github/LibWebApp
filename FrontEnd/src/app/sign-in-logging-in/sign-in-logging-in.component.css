@@ -1,81 +1,83 @@
 body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f3e9d2; /* Cream background color */
-}
-
-.signin-container {
-  max-width: 400px;
-  margin: 20px auto; /* Reduced top margin */
-  padding: 30px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-h2 {
-  text-align: center;
-  color: #8b4513; /* Brown text color */
-  margin-bottom: 20px;
-}
-
-form {
-  margin-top: 10px;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  font-size: 14px;
-  color: #8b4513; /* Brown text color */
-  margin-bottom: 5px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #8b4513; /* Brown border color */
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #fff; /* White background color */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
-}
-
-input:hover {
-  background-color: #f3e9d2; /* Cream background color on hover */
-}
-
-button {
-  background-color: #8b4513; /* Brown button color */
-  color: #fff;
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-button:hover {
-  background-color: #654321; /* Darker brown button color on hover */
-}
-
-p {
-  text-align: center;
-  margin-top: 15px;
-  color: #8b4513; /* Brown text color */
-}
-
-a {
-  color: #8b4513; /* Brown link color */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+ 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3e9d2; /* Cream background color */
+  }
+  
+  .signin-container {
+    max-width: 400px;
+    margin: 20px auto; /* Reduced top margin */
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #8b4513; /* Brown text color */
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-top: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #8b4513; /* Brown text color */
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #8b4513; /* Brown border color */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; /* White background color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  input:hover {
+    background-color: #f3e9d2; /* Cream background color on hover */
+  }
+  
+  button {
+    background-color: #8b4513; /* Brown button color */
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #654321; /* Darker brown button color on hover */
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 15px;
+    color: #8b4513; /* Brown text color */
+  }
+  
+  a {
+    color: #8b4513; /* Brown link color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

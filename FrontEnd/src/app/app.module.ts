@@ -6,19 +6,24 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule for handling
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { SigninComponent } from './sign-in-logging-in/sign-in-logging-in.component';
+import {  RouterModule, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
-    AppComponent,
     SignupComponent,
     SigninComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
-    FormsModule, // Include FormsModule in the imports array
-    NgModule
+    RouterModule,
+    CommonModule,
+    RouterModule.forRoot(routes)
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }
