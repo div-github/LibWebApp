@@ -10,11 +10,13 @@ import {  RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { routes } from './app.routes';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ReturnBookComponent } from './return-book/return-book.component';
 
 @NgModule({
   declarations: [
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    ReturnBookComponent
   ],
   imports: [
     FormsModule,
