@@ -9,6 +9,7 @@ import { SigninComponent } from './sign-in-logging-in/sign-in-logging-in.compone
 import {  RouterModule, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { routes } from './app.routes';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { routes } from './app.routes';
     BrowserModule,
     RouterModule,
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FontAwesomeModule
 
   ],
   providers: [],
