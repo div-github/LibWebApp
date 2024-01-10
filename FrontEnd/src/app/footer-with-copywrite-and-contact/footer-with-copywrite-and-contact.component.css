@@ -1,0 +1,30 @@
+.footer-container {
+    background-color: #121212; /* Matte black background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .copyright-container {
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .icon-link {
+    color: #fff; /* White icon color */
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    display: inline-block; /* Added for proper alignment */
+  }
+  
+  .icon-link:hover {
+    color: #0077b5; /* LinkedIn blue color on hover */
+  }
+  
