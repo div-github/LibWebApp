@@ -1,0 +1,25 @@
+/* Reset default margin and padding for the document */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  background-color: #333; /* Set your desired background color */
+  padding: 10px; /* Adjust padding as needed */
+  text-align: left; /* Align content to the left */
+}
+
+.logo-container {
+  display: inline-block; /* Align the logo container inline with other elements */
+}
+
+.logo-img {
+  display: block; /* Remove any extra space caused by inline-block */
+  margin: 0; /* Remove any default margin on the image */
+  padding: 0; /* Remove any default padding on the image */
+  height: 80px; /* Set your desired height for the logo */
+  width: auto; /* Maintain aspect ratio while adjusting height */
+  image-rendering: crisp-edges; /* Enhance image sharpness */
+
+}

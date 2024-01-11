@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { routes } from './app.routes';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReturnBookComponent } from './return-book/return-book.component';
+import { HeaderWithLogoComponent } from './header-with-logo/header-with-logo.component';
 
 @NgModule({
   declarations: [
