@@ -46,6 +46,7 @@
   .nav-list.show {
     display: flex;
     opacity: 0.75;
+    z-index: 9999;
   }
 
   .nav-item {
