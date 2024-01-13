@@ -11,13 +11,16 @@ import { CommonModule } from '@angular/common';
 import { routes } from './app.routes';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReturnBookComponent } from './return-book/return-book.component';
-import { HeaderWithLogoComponent } from './header-with-logo/header-with-logo.component';
+import { MatIconModule } from '@angular/material/icon';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 @NgModule({
   declarations: [
     SignupComponent,
     SigninComponent,
-    ReturnBookComponent
+    ReturnBookComponent,
   ],
   imports: [
     FormsModule,
@@ -25,8 +28,9 @@ import { HeaderWithLogoComponent } from './header-with-logo/header-with-logo.com
     RouterModule,
     CommonModule,
     RouterModule.forRoot(routes),
-    FontAwesomeModule
-
+    FontAwesomeModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: []

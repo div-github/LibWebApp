@@ -1,25 +1,62 @@
-/* Reset default margin and padding for the document */
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
-.header-container {
-  background-color: #333; /* Set your desired background color */
-  padding: 10px; /* Adjust padding as needed */
-  text-align: left; /* Align content to the left */
+/* navbar.component.css */
+.mat-toolbar {
+  background-color:  #121212; /* Set background color to black */
+  color: #fff; /* Set text color to white */
+  padding: 3%;
 }
 
 .logo-container {
-  display: inline-block; /* Align the logo container inline with other elements */
+  display: flex;
+  align-items: center;
+  margin-right: 16px; /* Adjust the margin as needed */
 }
 
 .logo-img {
-  display: block; /* Remove any extra space caused by inline-block */
-  margin: 0; /* Remove any default margin on the image */
-  padding: 0; /* Remove any default padding on the image */
-  height: 80px; /* Set your desired height for the logo */
-  width: auto; /* Maintain aspect ratio while adjusting height */
-  image-rendering: crisp-edges; /* Enhance image sharpness */
+  max-height: 40px; /* Set the maximum height for your logo */
+}
 
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* Set background color to black */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  .nav-list.show {
+    display: flex;
+    opacity: 0.75;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 8px;
+  }
+}
+.mat_icon_custom mat-icon{
+  height: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit; /* Optionally, set the color to inherit from the parent */
 }
