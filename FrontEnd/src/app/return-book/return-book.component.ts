@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ReturnBookComponent {
 
+  confirmReturn() {
+    // Add logic to handle the confirmation and send email to admin
+    console.log('Return confirmed. Sending email to admin.');
+  }
+  
 }

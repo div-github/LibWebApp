@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class UserAccountComponent {
 
+
+  logout() {
+    // Implement logout logic here
+    console.log('Logout clicked');
+  }
+
 }
