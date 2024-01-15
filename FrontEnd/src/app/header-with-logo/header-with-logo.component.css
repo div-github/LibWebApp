@@ -1,0 +1,63 @@
+/* navbar.component.css */
+.mat-toolbar {
+  background-color:  #121212; /* Set background color to black */
+  color: #fff; /* Set text color to white */
+  padding: 3%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 16px; /* Adjust the margin as needed */
+}
+
+.logo-img {
+  max-height: 40px; /* Set the maximum height for your logo */
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    background-color: #000; /* Set background color to black */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  .nav-list.show {
+    display: flex;
+    opacity: 0.75;
+    z-index: 9999;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 8px;
+  }
+}
+.mat_icon_custom mat-icon{
+  height: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit; /* Optionally, set the color to inherit from the parent */
+}
