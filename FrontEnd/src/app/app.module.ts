@@ -12,7 +12,7 @@ import { routes } from './app.routes';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReturnBookComponent } from './return-book/return-book.component';
 import { MatIconModule } from '@angular/material/icon';
-
+import { UserAccountComponent } from './user-account/user-account.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 
@@ -30,7 +30,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     RouterModule.forRoot(routes),
     FontAwesomeModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    UserAccountComponent
   ],
   providers: [],
   bootstrap: []
