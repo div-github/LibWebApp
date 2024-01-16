@@ -3,27 +3,27 @@
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="firstName">First Name:</label>
-      <input type="text" id="firstName" name="firstName" required [(ngModel)]="firstName">
+      <input type="text" id="firstName" name="firstName" required [(ngModel)]="newUser.firstname">
     </div>
 
     <div class="form-group">
       <label for="lastName">Last Name:</label>
-      <input type="text" id="lastName" name="lastName" required [(ngModel)]="lastName">
+      <input type="text" id="lastName" name="lastName" required [(ngModel)]="newUser.lastname">
     </div>
 
     <div class="form-group">
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required [(ngModel)]="email">
+      <input type="email" id="email" name="email" required [(ngModel)]="newUser.email">
     </div>
 
     <div class="form-group">
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required [(ngModel)]="password">
+      <input type="password" id="password" name="password" required [(ngModel)]="newUser.password">
     </div>
 
     <div class="form-group">
       <label for="confirmPassword">Confirm Password:</label>
-      <input type="password" id="confirmPassword" name="confirmPassword" required [(ngModel)]="confirmPassword">
+      <input type="password" id="confirmPassword" name="confirmPassword" required [(ngModel)]="newUser.confirmPassword">
     </div>
 
     <button type="submit">Sign Up</button>

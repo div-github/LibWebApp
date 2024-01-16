@@ -14,6 +14,8 @@ import { ReturnBookComponent } from './return-book/return-book.component';
 import { MatIconModule } from '@angular/material/icon';
 import { UserAccountComponent } from './user-account/user-account.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './user.service';
 
 
 @NgModule({
@@ -31,9 +33,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     FontAwesomeModule,
     MatIconModule,
     MatToolbarModule,
-    UserAccountComponent
+    UserAccountComponent,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: []
 })
 export class AppModule { }

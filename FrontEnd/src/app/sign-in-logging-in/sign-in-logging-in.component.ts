@@ -1,5 +1,6 @@
 
 import { Component } from '@angular/core';
+import { User } from '../models/loginuser';
 
 @Component({
   selector: 'app-signin',
@@ -8,13 +9,12 @@ import { Component } from '@angular/core';
 
 })
 export class SigninComponent {
-  email: any;
-  password: any;
+// Create an instance of the User class
+user: User = new User('', '');
 
-  onSubmit(event:any) {
-    event?.preventDefault()
-    console.log('Submitted values:', this.email, this.password);
-    // Perform further actions like sending data to a server, etc.
+  onSubmit() {
+
+    console.log(this.user);
   }
 }
 

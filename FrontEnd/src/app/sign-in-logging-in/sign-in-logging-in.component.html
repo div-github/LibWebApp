@@ -8,16 +8,16 @@
       <div class="form-group">
         <label for="email">Email:</label>
         <!-- Use ngModel to bind the input value to the 'email' property -->
-        <input type="email" id="email" name="email" required [(ngModel)]="email"/>
+        <input type="email" id="email" name="email" required [(ngModel)]="user.email"/>
       </div>
 
       <div class="form-group">
         <label for="password">Password:</label>
         <!-- Use ngModel to bind the input value to the 'password' property -->
-        <input type="password" id="password" name="password" required [(ngModel)]="password">
+        <input type="password" id="password" name="password" required [(ngModel)]="user.password">
       </div>
 
-      <button (click)="onSubmit($event)" type="submit">Sign In</button>
+      <button (click)="onSubmit()" type="submit">Sign In</button>
     
 
     <p>Don't have an account? <a href="/signup">Sign up here</a></p>

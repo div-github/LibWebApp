@@ -25,20 +25,25 @@ connection.connect((err) => {
   connection.end();
 });
 
-// Data to be inserted
-const userData = {
-  id:'3',
-  firstname: 'john_doe',
-  lastname: 'xyz',
-  email: 'john.doe@example.com',
-  user_password:'divya'
-};
+// Signup route
+app.post('/signup', (req, res) => {
+  const { firstname, lastname, email, password} = req.body;
 
-// Perform the INSERT INTO query
-connection.query('INSERT INTO user SET ?', userData, (error, results, fields) => {
-  if (error) throw error;
-  console.log('Inserted a new record with ID: ' + results.insertId);
+  // Create a new user object
+  const newUser = { firstname, lastname, email, password };
+
+  // Save the user to the MySQL database
+  db.query('INSERT INTO users SET ?', newUser, (err, result) => {
+    if (err) {
+      console.error('Error inserting user into database:', err);
+      return res.status(500).json({ error: 'Internal Server Error' });
+    }
+
+    console.log('User inserted into database with ID:', result.insertId);
+    res.status(201).json({ message: 'User created successfully', user: newUser });
+  });
 });
+
 
 // Define a route
 app.get('/', (req, res) => {
