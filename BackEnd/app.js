@@ -11,7 +11,7 @@ const app = express();
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: process.env.dbpassword, //'18Nov1999@',
+  password: process.env.dbpassword,
   database: 'hornerlibrary'
 });
 
