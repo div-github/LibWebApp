@@ -9,10 +9,10 @@ const app = express();
 
 // Create a connection to the MySQL server
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
+  host: '65.2.150.60',
+  user: 'dave',
   password: process.env.dbpassword,
-  database: 'hornerlibrary'
+  database: 'horner_books_db'
 });
 
 // Connect to the database
@@ -27,10 +27,10 @@ connection.connect((err) => {
 
 // Signup route
 app.post('/signup', (req, res) => {
-  const { firstname, lastname, email, password} = req.body;
+  const { first_name, last_name, email, password} = req.body;
 
   // Create a new user object
-  const newUser = { firstname, lastname, email, password };
+  const newUser = { first_name, last_name, email, password };
 
   // Save the user to the MySQL database
   db.query('INSERT INTO users SET ?', newUser, (err, result) => {
