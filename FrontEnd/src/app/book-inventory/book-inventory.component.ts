@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { BooksService } from '../services/books.service';
 
 @Component({
   selector: 'app-book-inventory',
@@ -9,15 +10,15 @@ import { Component } from '@angular/core';
   styleUrl: './book-inventory.component.css'
 })
 export class BookInventoryComponent {
-  books = [
-    { imageUrl: './assets/Logo1.png', title: 'Book 1' },
-    { imageUrl: './assets/Logo1.png', title: 'Book 2' },
-    { imageUrl: './assets/Logo1.png', title: 'Book 3' },
-    { imageUrl: './assets/Logo1.png', title: 'Book 3' },
-    { imageUrl: './assets/Logo1.png', title: 'Book 3' },
-    { imageUrl: './assets/Logo1.png', title: 'Book 3' },
-    { imageUrl: './assets/Logo1.png', title: 'Book 3' },
-    { imageUrl: './assets/Logo1.png', title: 'Book 3' },
-    // Add more books as needed
-  ];
+  books :any=  [];
+
+  constructor(private BookService:BooksService) {}
+  ngOnInit()
+  {
+    this.BookService.bookList().subscribe((data:any)=>{
+      console.log(data);
+      this.books=data;
+    })
+  }
+
 }

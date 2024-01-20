@@ -1,15 +1,15 @@
 // user.model.ts
 
 export class User {
-    firstname: string;
-    lastname: string;
+    first_name: string;
+    last_name: string;
     email: string;
     password: string;
     confirmPassword: string;
   
-    constructor(firstname: string, lastname: string, email: string, password: string, confirmPassword: string) {
-      this.firstname = firstname;
-      this.lastname = lastname;
+    constructor(first_name: string, last_name: string, email: string, password: string, confirmPassword: string) {
+      this.first_name = first_name;
+      this.last_name = last_name;
       this.email = email;
       this.password = password;
       this.confirmPassword = confirmPassword;
