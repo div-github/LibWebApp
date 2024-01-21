@@ -16,4 +16,4 @@ export class HeaderWithLogoComponent {
   toggleNavbar() {
     this.isNavbarOpen = !this.isNavbarOpen;
   }
-} 
+}

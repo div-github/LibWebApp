@@ -16,6 +16,9 @@ import { UserAccountComponent } from './user-account/user-account.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SignUpService } from './services/sign-up.service';
+import { ToastrModule } from 'ngx-toastr';
+import { IssueBookComponent } from './issue-book/issue-book.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -23,6 +26,7 @@ import { SignUpService } from './services/sign-up.service';
     SignupComponent,
     SigninComponent,
     ReturnBookComponent,
+    IssueBookComponent
   ],
   imports: [
     FormsModule,
@@ -34,8 +38,8 @@ import { SignUpService } from './services/sign-up.service';
     MatIconModule,
     MatToolbarModule,
     HttpClientModule,
-
-
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [ ]

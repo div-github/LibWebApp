@@ -1,1 +1,12 @@
-<p>issue-book works!</p>
+<div id="interactive" class="viewport p-4">
+    <!-- QuaggaJS will populate this element -->
+  </div>
+<!-- input  -->
+  <div class="isbn_input">
+        <div class="input-group mb-3 px-4">
+          <input type="text" class="form-control" [(ngModel)]="isbn_code" placeholder="Enter 13 Digit Isbn" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" (click)="issueBook()" type="button">Submit</button>
+          </div>
+        </div>
+</div>

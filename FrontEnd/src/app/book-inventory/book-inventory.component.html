@@ -6,7 +6,7 @@
   <div class="row">
     <!-- Loop through books and generate book elements -->
     <ng-container  *ngFor="let book of books; let i = index">
-      <div class="book col-md-4">
+      <div class="book col-md-4 mt-4">
         <img [src]="book.image_url" alt="{{book.title}}">
       </div>
 

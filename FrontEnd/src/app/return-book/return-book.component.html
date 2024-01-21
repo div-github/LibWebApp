@@ -1,9 +1,22 @@
 <!-- return-book.component.html -->
 <div class="return-container">
-    <div class="confirmation-message">
-      <p style="color: #d9c9b8; margin-bottom: 20px;">I am keeping the book: <strong>"Book Name"</strong> back to the shelf.</p>
-    </div>
-  
-    <button class="confirm-button" (click)="confirmReturn()">Confirm Return</button>
+  <div class="confirmation-message">
+    <p
+      *ngIf="accountData.book_name!='Null'"
+      style="color: #d9c9b8; margin-bottom: 20px"
+    >
+      I am keeping the book: <strong>"{{ accountData.book_name }}"</strong> back
+      to the shelf.
+    </p>
+    <p
+      *ngIf="accountData.book_name=='Null'"
+      style="color: #d9c9b8; margin-bottom: 20px"
+    >
+      No Book to Return
+    </p>
   </div>
-  
+
+  <button  *ngIf="accountData.book_name!='Null'" class="confirm-button" (click)="confirmReturn()">
+    Confirm Return
+  </button>
+</div>

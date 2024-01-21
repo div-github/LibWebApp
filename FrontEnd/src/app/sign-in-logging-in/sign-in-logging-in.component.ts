@@ -20,8 +20,8 @@ user: User = new User('', '');
   {
     this.loginService.signIn(this.user).subscribe((data:any)=>
       {
-        console.log(data);
-        localStorage.setItem('token',data.token);
+        localStorage.setItem('token',data.data.token);
+        localStorage.setItem('trash',data.data.user_id);
         this.router.navigate(['/dashboard']);
       },
       error=>{
